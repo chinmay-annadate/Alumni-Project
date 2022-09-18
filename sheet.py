@@ -2,7 +2,7 @@ import pandas as pd
 import gspread as gs
 
 def getSheet():
-    gc = gs.service_account(filename='alumni-362311-a0dba20f12a8.json')
+    gc = gs.service_account()
     sh = gc.open("Alumni Database Form (Responses)").sheet1
     df = pd.DataFrame(sh.get_all_records())
     return df

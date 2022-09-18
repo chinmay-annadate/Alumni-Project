@@ -6,7 +6,7 @@ from email.mime.image import MIMEImage
 def createMsg(sender,recipient,Alum):
     # Create message container - the correct MIME type is multipart/alternative.
     msg = MIMEMultipart('alternative')
-    msg['Subject'] = "WIT Solapur wishes you a very Happy Birthday!2"
+    msg['Subject'] = "WIT Solapur wishes you a very Happy Birthday!"
     msg['From'] = sender
     msg['To'] = recipient
 

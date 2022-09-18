@@ -1,8 +1,9 @@
 import wish
 import sheet
+import os
 
-sender=''
-password=''
+sender=os.environ['ALUMNI_UNAME']
+password=os.environ['ALUMNI_PASS']
 
 recipients=sheet.getRecipients()
 
